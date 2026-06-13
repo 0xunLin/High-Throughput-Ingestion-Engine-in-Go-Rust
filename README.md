@@ -52,5 +52,6 @@ go run main.go
 
 chmod +x run_benchmark.sh
 ./run_benchmark.sh
+```
 
-Open Source. Built for exploration and distributed system benchmarking.# High-Throughput-Ingestion-Engine-in-Go-Rust
+**Open Source. Built for exploration and distributed system benchmarking.# High-Throughput-Ingestion-Engine-in-Go-Rust**
