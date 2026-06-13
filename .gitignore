@@ -1,0 +1,16 @@
+# Python Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+
+# Rust build artifacts
+target/
+
+# Go binaries / local environment files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/*.csv
+*.png
