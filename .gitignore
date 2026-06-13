@@ -1,16 +1,45 @@
+# ==============================================================================
+# 1. Environment & Runtime Folders
+# ==============================================================================
 # Python Virtual Environment
 .venv/
 __pycache__/
 *.pyc
 
-# Rust build artifacts
-target/
+# ==============================================================================
+# 2. Rust Artifacts (rust-consumer)
+# ==============================================================================
+# Ignore the entire build output directory for Rust
+rust-consumer/target/
 
-# Go binaries / local environment files
+# Cargo also sometimes produces local development tracking or logs
+rust-consumer/*.log
+
+# Note: Keep rust-consumer/Cargo.lock to ensure reproducible builds on GitHub!
+
+# ==============================================================================
+# 3. Go Binaries & Artifacts (data-generator, gateway-service, go-consumer)
+# ==============================================================================
+# Compiled binaries visible in your file tree
+data-generator/data-gen-bin
+go-consumer/go-consumer-bin
+
+# General Go binary patterns (matching executable names across OS platforms)
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
-bin/*.csv
-*.png
+bin/
+
+# ==============================================================================
+# 4. Benchmark Results & Execution Metrics
+# ==============================================================================
+# Ignore the generated analysis data and graph plots
+
+
+# ==============================================================================
+# 5. OS Specific & Miscellaneous
+# ==============================================================================
+.DS_Store
+Thumbs.db
